@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background1">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/seeMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See More"
+        android:layout_below="@id/recycleView"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="3dp"
+        android:layout_alignParentRight="true"
+        android:textSize="18dp"
+        android:textColor="@color/blueLightText"
+        android:fontFamily="@font/clearsans_bold"/>
+
+    <ImageButton
+        android:id="@+id/more"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_seemore"
+        android:layout_below="@id/seeMore"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>

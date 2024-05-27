@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SHOP FOR EVERY ONE</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="description">From functional and stylish trench coats to weather-ready parkas, smart blazers and chic kimonos,
+        we\’ve got every outerwear style you could need this season in our new online collection. Find the right wardrobe option to suit any occasion
+        and master the art of layering in style. Invest in a quality, classic piece that you will want to wear year after year.</string>
+
+</resources>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background1"
+    tools:context=".CheckOut">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/ic_back" />
+
+    <TextView
+        android:id="@+id/cout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@id/back"
+        android:fontFamily="@font/clearsans_bold"
+        android:text="Check-Out"
+        android:textColor="@color/blueLightText"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/delivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cout"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/clearsans_medium"
+        android:text="Delivery"
+        android:textColor="@color/blueLightText"
+        android:textSize="35dp" />
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/delivery"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/clearsans_bold"
+            android:text="Address details"
+            android:textColor="@color/blueLightText"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/clearsans_bold"
+            android:text="Change"
+            android:textColor="@color/redText"
+            android:textSize="18dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/change"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:enabled="false"
+                    android:background="@null"
+                    android:fontFamily="@font/clearsans_bold"
+                    android:text="Dana Abu-Soufa"
+                    android:textColor="@color/blueLightText"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/clearsans_bold"
+                    android:text="-----------------------------------------------"
+                    android:textColor="@color/redText"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@null"
+                    android:enabled="false"
+                    android:fontFamily="@font/clearsans_bold"
+                    android:text="Km 5 refinery road oppsite re public road, effurun, delta state"
+                    android:textColor="@color/blueLightText"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/clearsans_bold"
+                    android:text="-----------------------------------------------"
+                    android:textColor="@color/redText"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@null"
+                    android:fontFamily="@font/clearsans_bold"
+                    android:text="+962795347341"
+                    android:enabled="false"
+                    android:textColor="@color/blueLightText"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/clearsans_bold"
+            android:text="Delivery method"
+            android:textColor="@color/blueLightText"
+            android:textSize="18dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/method"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/clearsans_bold"
+                        android:text="Door delivery"
+                        android:checked="true"
+                        android:textColor="@color/blueLightText"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="35dp"
+                        android:fontFamily="@font/clearsans_bold"
+                        android:text="------------------------------------------"
+                        android:textColor="@color/redText"
+                        android:textSize="16dp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="@font/clearsans_bold"
+                        android:text="Pick Up"
+                        android:textColor="@color/blueLightText"
+                        android:textSize="18dp" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout2"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/clearsans_regular"
+        android:text="Total"
+        android:textColor="@color/redText"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/totalPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout2"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="60dp"
+        android:fontFamily="@font/clearsans_bold"
+        android:text="200 JD"
+        android:textColor="@color/blueLightText"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/payment"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/clearsans_bold"
+        android:text="Proceed to payment"
+        android:textAllCaps="false"
+        android:textSize="18dp" />
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background1"
+    android:layout_height="match_parent"
+    tools:context=".Sraech">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/ic_back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@id/back"
+        android:fontFamily="@font/clearsans_bold"
+        android:text="Search"
+        android:textColor="@color/blueLightText"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:id="@+id/searchView_layout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="#C7C7C7"
+        android:visibility="gone">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_search" />
+
+        <EditText
+            android:id="@+id/find"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="#C7C7C7"
+            android:fontFamily="@font/clearsans_bold"
+            android:hint="Search"
+            android:imeActionId="1"
+            android:imeActionLabel="find"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textColor="@color/redText"
+            android:textColorHint="@color/redText" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_below="@id/searchView_layout"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/clearsans_regular"
+        android:text="Found 6 results"
+        android:textColor="@color/blueText"
+        android:visibility="gone"
+        android:textSize="25dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_marginTop="30dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/simg"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/ic_search" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/clearsans_bold"
+            android:text="Item not found"
+            android:textColor="#C7C7C7"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:fontFamily="@font/clearsans_bold"
+            android:text="Try searching the item with\na different keyword."
+            android:textColor="@color/blueLightText"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+</RelativeLayout>
